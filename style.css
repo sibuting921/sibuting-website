@@ -1,0 +1,117 @@
+body {
+    margin: auto;
+    padding: 1.5em;
+    color: #bdae9d;
+    max-width: 900px;
+    background-color: black;
+    font-family: hack, consolas, menlo-regular, menlo, monaco, 'ubuntu mono', monospace;
+}
+
+header a {
+    color: #37A8ED;
+    font-size: 1.4em;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+nav {
+    padding: 0.8em;
+    border-bottom: 1px solid green;
+    margin: 0.1em;
+}
+
+nav a {
+    color: #e5c138;
+    font-size: 110%;
+    margin-right: 0.4em;
+    text-decoration: none;
+}
+
+hr {
+    width: 95%;
+    border: 1px solid #008223;
+    margin: auto;
+}
+
+h1,
+h2 {
+    color: #eb939a;
+}
+
+h3 {
+    color: #55e439;
+    margin-left: 8px;
+}
+
+h4 {
+    color: green;
+    margin-left: 24px;
+}
+
+a:hover {
+    color: #cccccc;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: 32px;
+}
+
+table th,
+table td {
+    padding: 6px 13px;
+    border: 1px solid #cccccc;
+}
+
+ul,
+ol,
+p {
+    line-height: 120%;
+    margin-left: 32px;
+}
+
+code {
+    font-size: 90%;
+    display: inline;
+    overflow-x: auto;
+    color: #80FF80;
+    border-radius: 3px;
+    font-family: hack, consolas, menlo-regular, menlo, monaco, 'ubuntu mono', monospace;
+}
+
+p code {
+    display: inline;
+    padding: 4px;
+    border: 1px dashed #0eb7fa;
+}
+
+pre code {
+    display: block;
+    padding: 1em;
+    border: 1px dashed #0eb7fa;
+    margin-left: 32px;
+}
+
+blockquote {
+    color: #f18a65;
+    font-style: italic;
+    box-sizing: border-box;
+    padding-left: 1.7em;
+    border-left: 4px solid orange;
+    margin-left: 0;
+    margin-bottom: 1.7em;
+}
+
+footer {
+    font-size: 0.9em;
+    text-align: center;
+    padding: 0.4em;
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+    margin: 0.4em;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}

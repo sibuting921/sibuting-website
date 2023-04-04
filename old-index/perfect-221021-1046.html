@@ -1,0 +1,514 @@
+<!-- FOR THE CURIOUS: This website was created by @snkrsnKampa -->
+<!--
+and this website was edited by @enjoyjelly
++ printer ok
++ oled display ok
++ eyecare
++ background picture ok
+-->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Perfect Website</title>
+    <style>
+        :root {
+
+            /* reference Colors */
+            --ice: #97bbff;
+            --guava: #90ee90;
+            --waxapple: #f55e5e;
+            --orange: #f18a65;
+            --whiter: #fbfbfe;
+            --lightgray: #d3d3d3;
+            --gray: #959595;
+            --darker: #1c1b22;
+
+            /* custom Colors */
+            --blueneon: #0eb7fa;
+            --eyecare: #b3ff00;
+            --eyecare80: #9CCD29;
+
+            /* X11 Colors */
+            --gray80: #cccccc;
+            --gray10: #1a1a1a;
+
+
+
+        }
+
+        body {
+            color: var(--gray80);
+            --stroke-color: var(--gray10);
+            --stroke-width: 0.8px;
+            text-shadow: calc(var(--stroke-width) * -1) calc(var(--stroke-width) * -1) 0 var(--stroke-color),
+                calc(var(--stroke-width) * -1) 0 0 var(--stroke-color),
+                calc(var(--stroke-width) * -1) var(--stroke-width) 0 var(--stroke-color),
+                0 calc(var(--stroke-width) * -1) 0 var(--stroke-color),
+                0 var(--stroke-width) 0 var(--stroke-color),
+                var(--stroke-width) calc(var(--stroke-width) * -1) 0 var(--stroke-color),
+                var(--stroke-width) 0 0 var(--stroke-color),
+                var(--stroke-width) var(--stroke-width) 0 var(--stroke-color);
+
+            /* background: url("bg2.gif"); */
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+
+            padding: 1.5em;
+            font-family: "Noto Sans", "Liberation Sans", "Noto Serif", "Liberation Serif";
+            background-color: black;
+
+            font-size: 1.0em;
+            max-width: 900px;
+            margin: auto;
+
+        }
+
+        header {
+            color: var(--gray80);
+        }
+
+        h1,
+        h2 {
+            color: var(--eyecare);
+            padding-bottom: 0.3em;
+            border-bottom: 0.8px dashed var(--blueneon);
+
+        }
+
+        h1 {
+            color: #ff83fa;
+            --stroke-color: #8b4789;
+            --stroke-width: 0.8px;
+            text-shadow: calc(var(--stroke-width) * -1) calc(var(--stroke-width) * -1) 0 var(--stroke-color),
+                calc(var(--stroke-width) * -1) 0 0 var(--stroke-color),
+                calc(var(--stroke-width) * -1) var(--stroke-width) 0 var(--stroke-color),
+                0 calc(var(--stroke-width) * -1) 0 var(--stroke-color),
+                0 var(--stroke-width) 0 var(--stroke-color),
+                var(--stroke-width) calc(var(--stroke-width) * -1) 0 var(--stroke-color),
+                var(--stroke-width) 0 0 var(--stroke-color),
+                var(--stroke-width) var(--stroke-width) 0 var(--stroke-color);
+        }
+
+        h3 {
+            color: white;
+        }
+
+        nav a:link,
+        nav a:visited {
+            color: #ffd700;
+        }
+
+
+        div,
+        span {
+            font-weight: normal;
+        }
+
+        strong,
+        em {
+            font-family: "Noto Mono", "Liberation Mono", "Courier New", Courier, monospace;
+            font-size: 105%;
+        }
+
+        blockquote {
+            color: var(--orange);
+            margin-bottom: 1.7em;
+            box-sizing: border-box;
+            font-style: italic;
+            border-left: 4px solid currentColor;
+            margin-left: 0;
+            padding-left: 1.7em;
+        }
+
+        hr {
+            border: 0.8px dashed var(--blueneon);
+        }
+
+        ul,
+        ol {
+            font-weight: normal;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        a:link {
+            color: var(--ice);
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: var(--ice);
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: var(--gray80);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: var(--gray80);
+            text-decoration: overline underline;
+        }
+
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0px;
+            display: block;
+            width: 100%;
+        }
+
+        table tr:nth-child(2n) {
+			text-shadow: 4px 4px 4px var(--waxapple);
+        }
+
+        table th,
+        table td {
+            border: 0.8px dashed var(--waxapple);
+            padding: 6px 13px;
+        }
+
+        table th {
+            font-weight: 600;
+        }
+
+
+        code {
+            font-size: 90%;
+            border-radius: 3px;
+            overflow-x: auto;
+            display: inline;
+        }
+
+        p code {
+            display: inline;
+            padding: 4px;
+            color: var(--guava);
+            border: 0.8px dashed var(--blueneon);
+        }
+
+        p,
+        pre {
+            margin-bottom: 1.7em;
+            box-sizing: border-box;
+        }
+
+
+        pre {
+            padding: 1em;
+            border-radius: 3px;
+            border: 0.8px dashed var(--blueneon);
+        }
+
+        pre code {
+            color: var(--eyecare80);
+            background: transparent;
+            display: block;
+            padding: 1em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/">🏠 Home</a> |
+        <a href="about.html">👤 About</a> |
+        <a href="/CL/test2.html">🌿 Pages</a> |
+        <a href="about.html">🌷 Favorites</a> |
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/python/">Python</a>
+    </nav>
+    <header>
+        <h1 id="links">🌏 This is a website.</h1>
+        <aside>And it's really perfect.</aside>
+        <h2>🪐 The Planet Earth</h2>
+        <p>Posted on Wednesday, 4 October 2017 by Jane Smith</p>
+
+    </header>
+    <h2>Seriously, what else do you want?</h2>
+    <p>You probably build websites and think your website is special. You think your 15 megabyte parallax-ative home
+        page is going to get you some Award banner you can add to the top corner of your site. You think your 5000-line
+        jQuery file and 83 polyfills give IE7 a boner because it finally has box-shadow. Wrong. Let me describe your
+        perfect website:</p>
+    <ul>
+        <li>It's lightweight and loads fast</li>
+        <li>Fits on all screens</li>
+        <li>Looks the same in all browsers</li>
+        <li>The website is accessible to everyone that visits your site</li>
+        <li>It's legible and gets your point across (if you had one instead of just 5MB pictures of cats playing piano)
+        </li>
+    </ul>
+    <h3>Well, guess what:</h3>
+    <p>You are, Over-designing. Look at this website. It's a perfect website. Why the heck do you need to animate a
+        trendy banner flag when I hover over that useless piece of button? You spent hours on it and added 150 kilobytes
+        to your site, and someone jabbing at it on their iPad with fat sausage fingers will never see that. Not to
+        mention blind people will never see that either, but they don't see any of your useless website.</p>
+    <p>You never knew it, but this is your perfect website. Here's why.</p>
+    <h2>It's LIGHTWEIGHT</h2>
+    <p>This entire page weighs less than the gradient-meshed facebook sharing logo on your blog. Did you seriously load
+        100kb of jQuery UI just so you could animate the background color of a div? You loaded all 7 fontfaces of a
+        webfont just so you could say "Hi." at 100px height at the beginning of your site? You inefficient piece of
+        human.</p>
+    <h2>It's RESPONSIVE</h2>
+    <p>You brainless. You thought you needed media queries to be responsive, but no. Responsive means that it responds
+        to whatever screensize it's viewed on. This site doesn't care if you're on an iMac or a Tamagotchi.</p>
+    <h2>It WORKS</h2>
+    <p>Look at this website. You can read it... that is, if you can read. It makes sense. It has hierarchy. It's using
+        CSS3, HTML5 tags so you and your browser know what's in this site. That's semantics.</p>
+    <p>It has content on the screen. Your site has three bylines and link to your twitter account, but you spread it
+        over 5 full screens and make me click some bobbing button to show me how cool the jQuery ScrollTo plugin is.</p>
+    <p>Cross-browser compatibility? Load this site in IE4. I dare you.</p>
+    <h2>Your website is more than just HTML.</h2>
+    <h3>You have no excuse for using HTTP.</h3>
+    <p>Why are you still delivering sites over HTTP? A old Atom 330 CPU from 2008 can perform AES-256-CBC encryption via
+        OpenSSL at 110 megabits per second. A Xeon E5-2670 CPU without AES-NI enabled hits 444 megabits per second. With
+        AES-NI enabled it hits a staggering 2.2 gigabits per second. Your server probably can’t even load your
+        Javascript framework’s dependencies that fast.</p>
+    <p>TLS certificates are cheap. Seriously, you can even get them for free from <a href="https://letsencrypt.org/"
+            title="Let’s Encrypt Free Certificate Authority">Let’s Encrypt</a> or <a href="https://buy.wosign.com/free/"
+            title="WoSign Free SSL Certificates">WoSign</a>.</p>
+    <h3>This is gzipped.</h3>
+    <p>Your webserver is perfectly capable of compressing HTML. A Atom 330 CPU can perform single-core
+        <code>gzip -6</code> on random data at 51 megabits per second. A Xeon E5-2670 from 2012 can do this at 216
+        megabits per second. Your meme website isn’t as random as you think it is and will compress much faster.
+    </p>
+    <h3>Cache is Money</h3>
+    <p>It’s bad enough you’re forcing users to load 5MB of hero image and Javascript framework. Why are you making them
+        reload it every time they visit your website? Bandwidth is cheap but it isn’t free. Via data charges or waiting,
+        someone is paying for your laziness.</p>
+    <h2>This is a website. Look at it. You've never seen one before.</h2>
+    <p>Like the man who's never grown out his beard has no idea what his true natural state is, you have no idea what a
+        website is. All you have ever seen are skeuomorphic bastardizations of what should be text communicating a
+        message. This is a real, unexaggerated website. Look at it. It's beautiful.</p>
+    <h3>Yes, this is satire.</h3>
+    <p>I'm not actually saying your site should look like this. What I'm saying is that all the problems we have with
+        websites are <strong>ones we create ourselves</strong>. Websites aren't broken by default, they are functional,
+        high-performing, and accessible. You break them. You brainless fellows.</p>
+
+    <hr>
+
+    <hr>
+
+    <hr>
+
+    <button>Click here</button>
+
+    <p><mark>This text will be highlighted.</mark></p>
+
+    <table>
+        <caption>Table Caption</caption>
+        <thead>
+            <tr>
+                <th>Col Name</th>
+                <th>Col Name</th>
+                <th>Col Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cell</td>
+                <td>Cell</td>
+                <td>Cell</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/python/">Python</a>
+    </nav>
+
+    <figure>
+        <img src="https://1.bp.blogspot.com/-8YtcF_PSNu0/Yr8VieyqGAI/AAAAAAAALZg/KMPQs73TKn8t-PTQ7eOh2J38FnwDnGLkACK4BGAYYCw/s80/piggu.jpg"
+            alt="desc">
+        <figcaption>Image caption here</figcaption>
+    </figure>
+
+    <video width="300" height="150" controls>
+        <source src="https://download.samplelib.com/mp4/sample-30s.mp4" type="video/mp4">
+    </video>
+
+    <a href="#links">GoTop</a>
+
+
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+
+
+    <p>simplenote</p>
+
+    <p>sampling of what you can do with Markdown:</p>
+
+    <h1 id="heading-1">heading 1</h1>
+
+    <h2 id="heading-2">heading 2</h2>
+
+    <h3 id="heading-3">heading 3</h3>
+
+    <p><em>Italics</em></p>
+
+    <p><strong>Bold</strong></p>
+
+    <p><strong><em>Italics and Bold</em></strong></p>
+
+    <p>Links: <a href="https://simplenote.com/" rel="nofollow">Simplenote</a></p>
+
+    <p><a href="https://simplenote.com/" rel="nofollow">📓 Simplenote</a></p>
+
+    <p>Lists:</p>
+
+    <ul>
+        <li>Thing 1</li>
+        <li>Thing 2</li>
+        <li>Thing 3</li>
+    </ul>
+
+    <blockquote>
+        <p>Blockquote</p>
+    </blockquote>
+
+    <p><code>Code Inline 
+0101010101010101
+</code></p>
+
+    <pre><code>Code Block
+0101010101010101
+010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101
+</code></pre>
+    <pre><code>
+      *                                    `         ,o88888         
+                    *                             ,o8888888'         
+    ---====D                ,:o:o:oooo.        ,8O88Pd8888"          
+                        ,.::.::o:ooooOoOoO. ,oO8O8Pd888'"            
+                      ,.:.::o:ooOoOoOO8O8OOo.8OOPd8O8O"        *     
+          `          , ..:.::o:ooOoOOOO8OOOOo.FdO8O8"      |         
+                    , ..:.::o:ooOoOO8O888O8O,COCOO"      - o -       
+ _______           , . ..:.::o:______OO8OOOOCOCO"          |         
+(_______)       _   . ..:.::o (____  \ O8OCCC _ o                    
+ _______  ___ _| |_  ____ ___  ____)  ) ___ _| |_ _____ ___   _   _  
+|  ___  |/___|_   _)/ ___) _ \|  __  ( / _ (_   _|____ |  _ \| | | | 
+| |   | |___ | | |_| |  | |_| | |__)  ) |_| || |_/ ___ | | | | |_| | 
+|_|   |_(___/   \__)_|   \___/|______/ \___/  \__)_____|_| |_|\__  | 
+                   :.:. .  ,c:cccc"':.:.:.:.:.'              (____/  
+       `         ..:.:"'`::::c:"'..:.:.:.:.:.'                       
+               ...:.'.:.::::"'    . . . . .'        *                
+              .. . ....:."' `   .  . . ''                            
+    *       . . . ...."'                                    *        
+            .. . ."'    -hrr-             *         `                
+           .      _                                                  
+                _(_)_                          wWWWw   _             
+    @@@@       (_)@(_)   vVVVv     _     @@@@  (___) _(_)_           
+   @@()@@ wWWWw  (_)\    (___)   _(_)_  @@()@@   Y  (_)@(_)  wWWWw   
+    @@@@  (___)     `|/    Y    (_)@(_)  @@@@   \|/   (_)\   (___)   
+     /      Y       \|    \|/    /(_)    \|      |/      |     Y     
+  \ |     \ |/       | / \ | /  \|/       |/    \|      \|/  \ |/    
+  \jgs/   \\|///  \\\|//\\\|/// \|///  \\\|//  \\|//  \\\|// \\|///  
+</code></pre>
+
+
+    <pre> preformatted text. </pre>
+
+    <ul>
+        <li class="checklist-item"><span class="task-list-item-checked"></span> Checked 1</li>
+        <li class="checklist-item"><span class="task-list-item-checked"></span> Checked 2</li>
+        <li class="checklist-item"><span class="task-list-item-checked"></span> Checked 3</li>
+        <li class="checklist-item"><span class="task-list-item-unchecked"></span> Unchecked 1</li>
+        <li class="checklist-item"><span class="task-list-item-unchecked"></span> Unchecked 2</li>
+        <li class="checklist-item"><span class="task-list-item-unchecked"></span> Unchecked 3</li>
+    </ul>
+
+    <ol>
+        <li>Ordered 1</li>
+        <li>Ordered 2</li>
+        <li>Ordered 3</li>
+        <li>Ordered 4</li>
+    </ol>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+				<th>Header 3</th>
+				<th>Header 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1 Column 1</td>
+                <td>Row 1 Column 2</td>
+				<td>Row 1 Column 3</td>
+				<td>Row 1 Column 4</td>
+            </tr>
+            <tr>
+                <td>Row 2 Column 1</td>
+                <td>Row 2 Column 2</td>
+				<td>Row 2 Column 3</td>
+				<td>Row 2 Column 4</td>
+            </tr>
+            <tr>
+                <td>Row 3 Column 1</td>
+                <td>Row 3 Column 2</td>
+				<td>Row 3 Column 3</td>
+			 	<td>Row 3 Column 4</td>
+            </tr>
+            <tr>
+                <td>Row 4 Column 1</td>
+                <td>Row 4 Column 2</td>
+				<td>Row 4 Column 3</td>
+			 	<td>Row 4 Column 4</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <p><a href="https://simplenote.com" rel="nofollow">Link</a></p>
+
+    <p><img alt="bottles.image" src="./images/test-2.1.svg"></p>
+    <p><img alt="Cosmos-bipinnatus.image" src="./images/Cosmos-bipinnatus.jpg"></p>
+    <p><img alt="Cosmos-bipinnatus.image" src="./images/focus-temp-control.jpg"></p>
+	<a href="./index.html">🚶 Go back</a>
+
+        <hr>
+
+        <hr>
+
+        <hr>
+
+
+
+    <blockquote cite="https://www.vitsoe.com/us/about/good-design">"Good design is as little design as possible."<br>
+        ~ Dieter Rams</blockquote>
+    <hr style="width:95%">
+    <footer>
+        <p>Check the Google PageSpeed Insights <a
+                href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fperfectsite.neocities.org&tab=">here</a>
+        </p>
+        <p>See the <a href="connection-test.html">fastest website</a>, for checking internet connection
+            status.<br>Created from the philosophies expressed above.</p>
+        <p><em>Even the best can be improved</em>; if you can bring this website further beyond perfection, send a <a
+                href="https://github.com/snkrsnKampa/ThePerfectSite" title="snkrsnKampa/ThePerfectSite on GitHub">pull
+                request on GitHub</a>.</p>
+    </footer>
+</body>
+
+</html>

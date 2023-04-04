@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Denzuko Lab</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">Denzuko Brain-Computer Interfaces Laboratory</a>
+        <a href="../index.html">📡</a>
+    </header>
+    <nav>
+        <a href="../_amplifier/dual_bridge_power_amp-sta540.html" title="Go to poweramp page">poweramp</a>
+        <a href="../_power/bypass-capacitor.html" title="Go to capacitor page">capacitor</a>
+        <a href="../demo.html" title="Go to demo page">demo</a>
+    </nav>
+    <h2>Choose Bypass Capacitor</h2>
+    <aside>Capacitor ESR (Equivalent Series Resistance).</aside>
+    <h3>Description</h3>
+    <p>
+        當電源端提供電流到一個負載時，電流經過路徑上會有阻抗及感抗，而最後讓負載端產生壓降、高頻阻抗增加。此時可以利用電容儲存電能及高頻時低阻抗的特性來解決這問題。當設計電路時，可以在負載端並連電容來降低負載效應。
+    </p>
+
+    <p>
+        但是不同電容會有不同的特性，此時需要挑選適合的電容。我從電容製造商整理了常用到的電容，依照不同容值、結構、材料、電容來做比對，藉此選出適合的電容。
+    </p>
+    <p>
+        電容值低的電容，頻率內阻曲線會趨向高頻；而同樣電容值的電容，電容接點兩端距離越短，截面積越大，高頻阻抗相對較低。
+    </p>
+    <p>
+        不同頻率下電容的阻抗-頻率圖:
+    </p>
+    <p><img alt="dual_bridge_amp_measure" src="./images/Capcitor_Z-F_Plot.png"></p>
+
+    <footer>
+        <p>(c) 2023 PWE Audio. All Rights Reserved.
+    </footer>
+</body>
+
+</html>

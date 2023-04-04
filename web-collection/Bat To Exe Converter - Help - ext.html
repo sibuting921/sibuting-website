@@ -1,0 +1,2775 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+<head profile="http://www.w3.org/2005/10/profile">
+ 
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="author" content="Fatih Kodak" />
+<meta name="copyright" content="Copyright (c) 2016 Fatih Kodak" />
+
+<title>Help</title>
+
+<style type="text/css">
+
+<!--
+
+
+.line{
+height:1px;
+border-top:1px solid black;
+margin:20px 0px 20px 0px;
+}
+
+p {
+margin-left:20px;
+font-size:13px;
+}
+
+.ml-20 {
+margin-left:20px;
+}
+
+h5{
+color:blue;
+}
+
+-->
+
+</style>
+
+
+</head>
+
+<body bgcolor="#FFFFFF" style="font-family:verdana;font-size:small;padding-left:10px;">
+
+<div style="padding-right:20px;width:800px">
+
+<h2 id="ext">Extended commands</h2>
+
+<p>Bat To Exe Converter has some extended commands, that are not normally available in batch files.<br>
+You must use the prefix <b>%extd%</b> to call the extended commands.</p>
+
+
+<div class="line"></div>
+
+
+<h3 id="addextension">AddExtension</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p>Add a file name extension to the given string</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /addextension string extension</code></p>
+
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /addextension test .txt ; (This will return "test.txt")</code></p>
+
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="aesdecode">AesDecode</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p>Decode the given file using the AES algorithm</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /aesdecode source destination key</code></p>
+
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /aesdecode encoded.aes file.txt mykey</code></p>
+
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="aesencode">AesEncode</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p>Encode the given file using the AES algorithm</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /aesencode source destination key</code></p>
+
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /aesencode file.txt encoded.aes mykey</code></p>
+
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+
+</div>
+
+
+
+<div class="line"></div>
+
+
+<h3 id="ascii">Ascii</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p>Returns the ASCII value of the specified character</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /ascii character</code></p>
+
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /ascii A ; (This will return 65)</code></p>
+
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="base64decode">Base64Decode</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p>Decode the given file using the Base64 algorithm</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /base64decode source destination</code></p>
+
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /base64decode encoded.b64 file.txt</code></p>
+
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="base64encode">Base64Encode</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p>Encode the given file using the Base64 algorithm</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /base64encode source destination</code></p>
+
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /base64encode file.txt encoded.b64</code></p>
+
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="bin">Bin</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p>Convert a number to a string in binary format</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /bin number</code></p>
+
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /bin 32 ; (This will return 100000)</code></p>
+
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="browseforfile">BrowseForFile</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p> Open a dialog box to browse for a file</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /browseforfile title defaultfile pattern position</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /browseforfile "Browse for a file" "" "EXE (*.exe)|*.exe|BAT (*.bat)|*.bat" 1</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="browseforfolder">BrowseForFolder</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p> Open a dialog box to browse for a folder</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /browseforfolder title startpath</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /browseforfolder "Browse for a folder" C:\</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="changeexeicon">ChangeExeIcon</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Change the icon of an exe file</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /changeexeicon infile.exe outfile.exe iconfile.ico</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /changeexeicon infile.exe outfile.exe iconfile.ico</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="char">Char</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Returns the character of the specified ASCII value</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /char value</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /char 65 ; (This will return A)</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="closewindow">CloseWindow</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Close the specified window</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /closewindow windowname</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /closewindow Calculator; (This will close calculator)</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="crc32">CRC32</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Calculate the CRC32 checksum of the given file</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /crc32 filename</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /crc32 myfile.txt; (This will calculate the CRC32 checksum of "myfile.txt")</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="disablewindow">DisableWindow</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Disable the specified window</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /disablewindow windowname</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /disablewindow Calculator</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="download">Download</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Download a file from the given URL</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /download url filename</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /download http://www.f2ko.de/downloads/Bat_To_Exe_Converter.zip Bat_To_Exe_Converter.zip</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result (a value unequal to zero on success) in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="downloadheader">DownloadHeader</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Download the HTTP header of the given URL</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /downloadheader url filename</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /downloadheader http://www.f2ko.de/downloads/Bat_To_Exe_Converter.zip header.txt</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="enablewindow">EnableWindow</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Enable the specified window</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /enablewindow windowname</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /enablewindow Calculator</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="findexecutable">FindExecutable</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p>Retrieves the name of the executable (.exe) file associated with a specific document file</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /findexecutable file</code></p>
+
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /findexecutable file.txt</code></p>
+
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="flashconsole">FlashConsole</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p>Flash the main console window</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /flashconsole count timeout value background</code></p>
+
+<h5>Values</h5>
+
+	<p>
+	<code>
+	FLASHW_CAPTION : flash the window caption<br>
+	FLASHW_TRAY : flash the taskbar button<br>
+	FLASHW_ALL : flash the window caption and taskbar button<br>
+	</code>
+	</p>
+
+<h5>Background</h5>
+
+	<p>
+	<code>
+	0<br>
+	1 : flash continuously until the console comes to the foreground<br>
+	</code>
+	</p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /flashconsole 60 1000 FLASHW_ALL 0</code></p>
+
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="flashwindow">FlashWindow</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p>Flash the specified window</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /flashwindow windowname count timeout value background</code></p>
+
+<h5>Values</h5>
+
+	<p>
+	<code>
+	FLASHW_CAPTION : flash the window caption<br>
+	FLASHW_TRAY : flash the taskbar button<br>
+	FLASHW_ALL : flash the window caption and taskbar button<br>
+	</code>
+	</p>
+
+<h5>Background</h5>
+
+	<p>
+	<code>
+	0<br>
+	1 : flash continuously until the window comes to the foreground<br>
+	</code>
+	</p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /flashwindow Calculator 60 1000 FLASHW_ALL 0</code></p>
+
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="getclipboardtext">GetClipboardText</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Returns the last pasted text in the clipboard</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /getclipboardtext</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /getclipboardtext</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="getcomputername">GetComputerName</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Returns the computer name</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /getcomputername</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /getcomputername</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="getconsoletitle">GetConsoleTitle</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Retrieves the title of the current console window</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /getconsoletitle</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /getconsoletitle</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+<h3 id="getcpuname">GetCPUName</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Returns the CPU name</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /getcpuname</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /getcpuname</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="getcursorposx">GetCursorPosX</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Returns the X position of the mouse in the desktop</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /getcursorposx</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /getcursorposx</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="getcursorposy">GetCursorPosY</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Returns the Y position of the mouse in the desktop</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /getcursorposy</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /getcursorposy</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="getdesktopheight">GetDesktopHeight</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Returns the height of the desktop</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /getdesktopheight</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /getdesktopheight</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="getdesktopwidth">GetDesktopWidth</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Returns the width of the desktop</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /getdesktopwidth</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /getdesktopwidth</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="getextension">GetExtension</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Retrieves the extension of the specified path</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /getextension path</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /getextension C:\test.txt ; (This will return "txt")</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="getfilename">GetFileName</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Retrieves the filename of the specified path</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /getfilename path</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /getfilename C:\test.txt ; (This will return "test.txt")</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="getmimetype">GetMimeType</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Retrieves the mime type of the given file extension</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /getmimetype extension</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /getmimetype txt</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+<h3 id="getpath">GetPath</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Retrieves the path part of the specified path</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /getpath path</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /getpath C:\path\test.txt ; (This will return "C:\path\")</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="getspecialfolder">GetSpecialFolder</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Retrieves the path of a special folder</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /getspecialfolder value</code></p>
+
+<h5>Values</h5>
+
+	<p>
+	<code>
+ADMINTOOLS<br>
+ALTSTARTUP<br>
+APPDATA<br>
+BITBUCKET<br>
+CDBURN_AREA<br>
+COMMON_ADMINTOOLS<br>
+COMMON_ALTSTARTUP<br>
+COMMON_APPDATA<br>
+COMMON_DESKTOPDIRECTORY<br>
+COMMON_DOCUMENTS<br>
+COMMON_FAVORITES<br>
+COMMON_MUSIC<br>
+COMMON_OEM_LINKS<br>
+COMMON_PICTURES<br>
+COMMON_PROGRAMS<br>
+COMMON_STARTMENU<br>
+COMMON_STARTUP<br>
+COMMON_TEMPLATES<br>
+COMMON_VIDEO<br>
+COMPUTERSNEARME<br>
+CONNECTIONS<br>
+CONTROLS<br>
+COOKIES<br>
+DESKTOP<br>
+DESKTOPDIRECTORY<br>
+DRIVES<br>
+FAVORITES<br>
+FONTS<br>
+HISTORY<br>
+INTERNET<br>
+INTERNET_CACHE<br>
+LOCAL_APPDATA<br>
+MYDOCUMENTS<br>
+MYMUSIC<br>
+MYPICTURES<br>
+MYVIDEO<br>
+NETHOOD<br>
+NETWORK<br>
+PERSONAL<br>
+PRINTERS<br>
+PRINTHOOD<br>
+PROFILE<br>
+PROGRAM_FILES<br>
+PROGRAM_FILESX86<br>
+PROGRAM_FILES_COMMON<br>
+PROGRAM_FILES_COMMONX86<br>
+PROGRAMS<br>
+RECENT<br>
+RESOURCES<br>
+RESOURCES_LOCALIZED<br>
+SENDTO<br>
+STARTMENU<br>
+STARTUP<br>
+SYSTEM<br>
+SYSTEMX86<br>
+TEMPLATES<br>
+WINDOWS<br>
+
+	</code>
+	</p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /getspecialfolder DESKTOPDIRECTORY</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="getsystemlanguage">GetSystemLanguage</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Retrieves the system language</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /getsystemlanguage</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /getsystemlanguage</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="gettickcount">GetTickCount</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Retrieves the number of milliseconds that have elapsed since the system was started</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /gettickcount</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /gettickcount</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="getuserlanguage">GetUserLanguage</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Retrieves the user language</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /getuserlanguage</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /getuserlanguage</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="getusername">GetUserName</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Returns the user name</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /getusername</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /getusername</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="hex">Hex</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p>Convert a number to a string in hexadecimal format</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /hex number</code></p>
+
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /hex 1000 ; (This will return 3E8)</code></p>
+
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="hideself">HideSelf</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Hide the main console window</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /hideself</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /hideself</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="hidewindow">HideWindow</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Hide the specified window</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /hidewindow windowname</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /hidewindow Calculator ; (This will hide calculator)</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="input">Input</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Read a line from the console input</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /input</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /input</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="inputbox">InputBox</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Open an input box</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /inputbox title message default</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /inputbox Title "Enter the text below" "I'm the default input"</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+<h3 id="is64bit">Is64Bit</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Determine whether your computer is running a 32-bit version or 64-bit version of Windows</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /is64bit</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /is64bit</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result (1 = 64Bit) in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+<h3 id="left">Left</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Extract a substring of a string from the left side</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /left string length</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /left String 3  ; (This will return "Str")</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+<h3 id="lowercase">LowerCase</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Returns the given string converted into lower case characters</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /lowercase string</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /lowercase STRING  ; (This will return "string")</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+<h3 id="lzma">LZMA</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Compress the given file using the LZMA algorithm</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /lzma source destination</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /lzma file.txt file.lzma</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="makeadmin">MakeAdmin</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Add an administrator manifest to the exe</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /makeadmin infile.exe outfile.exe value</code></p>
+
+<h5>Values</h5>
+
+	<p>
+	<code>
+	0 : keep existing resources<br>
+	1 : delete existing resources<br>
+	</code>
+	</p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /makeadmin infile.exe outfile.exe 0</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result (on success a value unequal to 0) in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+<h3 id="makeguid">MakeGuid</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Create a GUID string</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /makeguid</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /makeguid</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="makeshortcut">MakeShortcut</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Create a shortcut of the given file</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /makeshortcut source shortcut arguments description workingdirectory icon</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /makeshortcut "%~f0" "%~dp0Shortcut.lnk" "Arg1 Arg2 Arg3" "My Shortcut" "%~dp0" "%~f0"</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="maketoolwindow">MakeToolWindow</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Change the window style to a tool window style</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /maketoolwindow windowname</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /maketoolwindow Calculator</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="maskedinput">MaskedInput</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Read a line from the console while hiding the input</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /maskedinput</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /maskedinput</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="maskedinputbox">MaskedInputBox</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Open an input box while hiding the input</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /maskedinputbox title message default</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /maskedinputbox Title "Enter the text below" "I'm the default input"</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="maximizewindow">MaximizeWindow</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Maximize the specified window</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /maximizewindow windowname</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /maximizewindow Calculator</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+
+<div class="line"></div>
+
+<h3 id="md5">MD5</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Returns the MD5 fingerprint of the given file</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /md5 filename</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /md5 example.txt</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+<h3 id="mid">Mid</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Extract a substring from a string at the specified position</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /mid string position</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /mid String 3  ; (This will return "ring")</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+<h3 id="messagebox">MessageBox</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Display a messagebox</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /messagebox titel text flag</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /messagebox Error Message 16</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="messageboxcheck">MessageBoxCheck</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Display a messagebox that gives the option of suppressing further occurrences</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /messageboxcheck titel text flag guid</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /messageboxcheck Titel Message 0 {73E8105A-7AD2-4335-B694-94F837A38E79}</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="minimizewindow">MinimizeWindow</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Minimize the specified window</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /minimizewindow windowname</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /minimizewindow Calculator</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+
+<div class="line"></div>
+
+<h3 id="mouseclick">MouseClick</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Simulate mouse clicks</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /mouseclick value</code></p>
+
+<h5>Values</h5>
+
+	<p>
+	<code>
+	-lc : left click<br>
+	-rc : right click<br>
+	-ldc : left double click<br>
+	-rdc : right double click<br>
+	</code>
+	</p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /mouseclick -rc ; (This will simulate a right click)</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="movewindow">MoveWindow</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Move the specified window</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /movewindow windowname x y</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /movewindow Calculator 100 100</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="osversion">OSVersion</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Retrieve the version of the operating system</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /osversion</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /osversion</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="play">Play</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Play the specified WAVE (.wav) file</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /play wavfile</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /play sample.wav</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="random">Random</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Generate a random number</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /random maximum</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /random 1000</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="rc4">RC4</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Crypt the given file using the RC4 algorithm</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /rc4 source destination key</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /rc4 file.txt file.rc4 samplekey</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="readpreferencevalue">ReadPreferenceValue</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Read a value associated with the specified key from the preference file</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /readpreferencevalue filename key</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /readpreferencevalue settings.ini appname</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="removeextension">RemoveExtension</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p>Remove the extension from the given string</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /removeextension string</code></p>
+
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /removeextension test.txt ; (This will return "test")</code></p>
+
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="renameextension">RenameExtension</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p>Replace the extension of the given string with a new one</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /renameextension string extension</code></p>
+
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /renameextension test.txt bat ; (This will return "test.bat")</code></p>
+
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="resizewindow">ResizeWindow</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Resize the specified window</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /resizewindow windowname x y width height</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /resizewindow Calculator 0 0 100 100</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+
+<div class="line"></div>
+
+<h3 id="right">Right</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Extract a substring of a string from the right side</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /right string length</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /right String 3</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="savefiledialog">SaveFileDialog</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p> Open a dialog box to save a file</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /savefiledialog title defaultfile pattern</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /savefiledialog "Save file as" "" "All Files (*.*)|*.*"</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="screenshot">Screenshot</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p> Take a screenshot of the desktop and save it as the given filename</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /screenshot filename</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /screenshot desktop.bmp</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="sendkeys">SendKeys</h3>
+
+	<div class="ml-20">
+
+
+<h5>Description</h5>
+
+	<p> Simulate text input</p>
+
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /sendkeys text</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /sendkeys text</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="setclipboardtext">SetClipboardText</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Store the given string into the clipboard</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /setclipboardtext text</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /setclipboardtext text</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="setconsoletransparency">SetConsoleTransparency</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Set the transparency of the main console window</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /setconsoletransparency value</code></p>
+
+<h5>Values</h5>
+
+	<p>
+	<code>
+	0-100<br>
+	0 : transparent<br>
+	100 : opaque<br>
+	</code>
+	</p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /setconsoletransparency 50</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="setcursor">SetCursor</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Move the cursor to the specified screen coordinates</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /setcursor x y</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /setcursor 100 100</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="setforegroundwindow">SetForegroundWindow</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Bring the specified window to the foreground</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /setforegroundwindow windowname</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /setforegroundwindow Calculator</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="setleft">SetLeft</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Pad a string to the left by adding the specified character to fit the length</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /setleft string length character</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /setleft test 10 *  ; (This will return "test******")</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="setright">SetRight</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Pad a string to the right by adding the specified character to fit the length</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /setright string length character</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /setright test 10 *  ; (This will return "******test")</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+<h3 id="setwindowtitle">SetWindowTitle</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Set the title of the specified window</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /setwindowtitle windowname title</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /setwindowtitle Calculator NewTitle</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="setwindowtransparency">SetWindowTransparency</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Set the transparency of the specified window</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /setwindowtransparency windowname value</code></p>
+
+<h5>Values</h5>
+
+	<p>
+	<code>
+	0-100<br>
+	0 : transparent<br>
+	100 : opaque<br>
+	</code>
+	</p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /setwindowtransparency Calculator 50</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="sha1">SHA1</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Returns the SHA1 fingerprint of the given file</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /sha1 filename</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /sha1 example.txt</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="showself">ShowSelf</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Show the main console window</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /showself</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /showself</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="showwindow">ShowWindow</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Show the previously hidden window again</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /showwindow windowname</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /showwindow Calculator</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="sleep">Sleep</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Wait the specified number of milliseconds</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /sleep milliseconds</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /sleep 2000</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="speak">Speak</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Speak the specified text with the default voice</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /speak text speed</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /speak "This is a test" 2</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="strcount">StrCount</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Count the number of times a substring occurs in a string</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /strcount string stringtocount</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /strcount "This is the sample string" is</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="strpos">StrPos</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Search for the first occurrence of substring inside a string</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /strpos string searchstring</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /strpos "a sample string" "sample"</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="strreplace">StrReplace</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Replace some characters with some other characters in a string</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /strreplace string searchstring replacestring</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /strreplace "a sample string" sample replaced</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="strrev">StrRev</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Reverse a string</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /strrev string</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /strrev "string to reverse"</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="strsplit">StrSplit</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Split a string using a separator</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /strsplit string index separator</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /strsplit "string;to;split" 1 ";"</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="tempfile">Tempfile</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Creates a name for a temporary file</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /tempfile directory</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /tempfile %temp%</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<h3 id="trim">Trim</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Remove the specified character at the beginning and at the end of the string</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /trim string character</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /trim ****test**** *  ; (This will return "test")</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+
+<h3 id="trimleft">TrimLeft</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Remove the specified character at the beginning of the string</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /trimleft string character</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /trimleft ****test**** *  ; (This will return "test****")</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="trimright">TrimRight</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Remove the specified character at the end of the string</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /trimright string character</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /trimright ****test**** *  ; (This will return "****test")</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="unlzma">UnLZMA</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Decompress the given file using the LZMA algorithm</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /unlzma source destination</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /unlzma file.lzma file.txt</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="unzip">UnZip</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Extract the contents of the specified Zip archive to the destination folder</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /unzip zipfile destination</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /unzip sample.zip c:\</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="uppercase">UpperCase</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Returns the given string converted into upper case characters</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /uppercase string</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /uppercase string ; (This will return "STRING")</code></p>
+
+<h5>Return value</h5>
+
+	<p>Returns the result in the variable %result%</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="windowontop">WindowOnTop</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Make the window stay on top</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /windowontop windowname</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /windowontop Calculator</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="writepreferencevalue">WritePreferenceValue</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Write a value associated with the specified key to the preference file</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /writepreferencevalue filename key value</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /writepreferencevalue settings.ini appname "myapp 1.0"</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+<div class="line"></div>
+
+<h3 id="zip">Zip</h3>
+
+	<div class="ml-20">
+
+<h5>Description</h5>
+
+	<p>Add and compress the file/folder to the specified Zip archive</p>
+
+<h5>Syntax</h5>
+
+	<p> <code>%extd% /zip filetozip zipfile</code></p>
+
+<h5>Example</h5>
+
+	<p> <code>%extd% /zip sample.txt packed.zip</code></p>
+
+<h5>Return value</h5>
+
+	<p>This command has no return value</p>
+
+</div>
+
+
+</div>
+
+</body>
+</html>
