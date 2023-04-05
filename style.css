@@ -2,7 +2,7 @@ body {
     margin: auto;
     padding: 1.5em;
     color: #bdae9d;
-    max-width: 900px;
+    max-width: 800px;
     background-color: black;
     font-family: hack, consolas, menlo-regular, menlo, monaco, 'ubuntu mono', monospace;
 }
@@ -22,7 +22,7 @@ nav {
 
 nav a {
     color: #e5c138;
-    font-size: 110%;
+    font-size: 100%;
     margin-right: 0.4em;
     text-decoration: none;
 }
