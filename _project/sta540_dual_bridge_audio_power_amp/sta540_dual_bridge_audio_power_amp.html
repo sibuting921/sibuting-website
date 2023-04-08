@@ -19,6 +19,7 @@
         <a href="../../collection.html" title="Go to Collections page">💙Collections</a>
         <a href="../../about.html" title="Go to About page">🌞About</a>
     </nav>
+    <article>
     <h2>STA540 Dual Bridge Audio Power Amp</h2>
     <aside>A high quality power amplifier with small size.</aside>
     <h3>Description</h3>
@@ -27,7 +28,6 @@
     </p>
 
     <h4>Features</h4>
-    <p>benefit</p>
     <ol>
         <li>體積小</li>
         <li>發熱量小</li>
@@ -42,60 +42,98 @@
     <hr />
     <h3>Parameter</h3>
     <h4>Main IC</h4>
-    <p>主放大晶片可選擇 ST 的 TDA7266 、 TDA7297、STA540，PCB 都可兼容。這系列為 AB 類的 IC 有著失真低，雜音低，輸出推力好的優點，且輸出為 BTL 橋接模式，輸出電壓振幅大，主要差異如下:
-    </p>
     <table>
+    <caption>Audio Amplifier Chip Campare</caption>
         <thead>
             <tr>
-                <th>Header 1</th>
-                <th>Header 2</th>
-                <th>Header 3</th>
-                <th>Header 4</th>
+                <th></th>
+                <th>TDA7266</th>
+                <th>TDA7297</th>
+                <th>STA540</th>
+                <th>Comment</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Row 1 Column 1</td>
-                <td>Row 1 Column 2</td>
-                <td>Row 1 Column 3</td>
-                <td>Row 1 Column 4</td>
+                <th>電壓放大倍數</th>
+                <td>20</td>
+                <td>40</td>
+                <td>15.9</td>
+                <td>Vi/Vo</td>
             </tr>
             <tr>
-                <td>Row 2 Column 1</td>
-                <td>Row 2 Column 2</td>
-                <td>Row 2 Column 3</td>
-                <td>Row 2 Column 4</td>
+                <th>電壓迴轉率</th>
+                <td>3.20</td>
+                <td>4.57</td>
+                <td>2.26</td>
+                <td>(V/us)</td>
             </tr>
             <tr>
-                <td>Row 3 Column 1</td>
-                <td>Row 3 Column 2</td>
-                <td>Row 3 Column 3</td>
-                <td>Row 3 Column 4</td>
+                <th>輸出瓦數</th>
+                <td>18</td>
+                <td>18</td>
+                <td>22.5</td>
+                <td>(Watt)</td>
             </tr>
             <tr>
-                <td>Row 4 Column 1</td>
-                <td>Row 4 Column 2</td>
-                <td>Row 4 Column 3</td>
-                <td>Row 4 Column 4</td>
+                <th>消耗電流</th>
+                <td>50</td>
+                <td>50</td>
+                <td>109</td>
+                <td>(mA)</td>
             </tr>
         </tbody>
     </table>
     <ul>
-        <li>電壓放大倍數：TDA7297 > TDA7266 > STA540 ( 實測 x40, x20, x15.9 )</li>
-        <li>電壓迴轉率：TDA7297 > TDA7266 > STA540 ( 實測 4.57 V/us, 3.20 V/us, 2.26 V/us )</li>
-        <li>輸出瓦數：STA540 > TDA7297 = TDA7266 ( 官方數據 22.5 W, 18 W, 18 W )</li>
-        <li>消耗電流：STA540 > TDA7297 = TDA7266 ( 實測 109 mA, 50 mA, 50 mA )</li>
+        <li>電壓放大倍數：TDA7297 > TDA7266 > STA540 (實測 x40, x20, x15.9)</li>
+        <li>電壓迴轉率：TDA7297 > TDA7266 > STA540 (實測 4.57 V/us, 3.20 V/us, 2.26 V/us)</li>
+        <li>輸出瓦數：STA540 > TDA7297 = TDA7266 (官方數據 22.5 W, 18 W, 18 W)</li>
+        <li>消耗電流：STA540 > TDA7297 = TDA7266 (實測 109 mA, 50 mA, 50 mA)</li>
     </ul>
+    <p>主放大晶片可選擇 ST 的 TDA7266 、 TDA7297、STA540，PCB 都可兼容。這系列為 AB 類的 IC 有著失真低，雜音低，輸出推力好的優點，且輸出為 BTL 橋接模式，輸出電壓振幅大.
+    </p>
     <h4>Sounds</h4>
+        <table>
+    <caption>Quality of sound</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>TDA7266</th>
+                <th>TDA7297</th>
+                <th>STA540</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>高音量感</th>
+                <td>++++</td>
+                <td>+++++</td>
+                <td>++</td>
+            </tr>
+            <tr>
+                <th>低音量感</th>
+                <td>++++</td>
+                <td>++++</td>
+                <td>+++++</td>
+            </tr>
+                        <tr>
+                <th>均衡性</th>
+                <td>+++++</td>
+                <td>++++</td>
+                <td>++++</td>
+            </tr>
+            <tr>
+        </tbody>
+    </table>
     <ul>
-        <li>低頻量感：STA540 > TDA7266 > TDA7297</li>
         <li>高音量感：TDA7297 > TDA7266 > STA540</li>
+        <li>低音量感：STA540 > TDA7266 > TDA7297</li>
         <li>均衡性：TDA7266 > STA540 > TDA7297</li>
     </ul>
     <h4>Compare</h4>
     <p>STA540 則為車用等級，它的輸出級為 Sziklai Pair BJT，值得嘗試看看。 TDA7297 的速度在這之中是最快的，高音表現比其他的好，不過波型有點振鈴現像，相比其它聽起來會比較尖銳。TDA7266
         則介於 STA540 與 TDA7297。</p>
-    <p>這三顆大致上相差不會太遠，主體都一致，只差別在修飾，有地方加分則有其它地方減分。比如我在桌上型全音域喇叭 搭配 STA540 最剛好，有感染力;不過在立式三路分音大劇院喇叭卻是搭配 TDA7297 最動聽。
+    <p>這三顆大致上相差不會太遠，主體都一致，只差別在修飾，有地方加分則有其它地方減分。比如我在桌上型全音域喇叭 搭配 STA540 最有感染力;不過在立式三路分音大劇院喇叭卻是搭配 TDA7297 最動聽, TDA7266 迴轉率夠而且沒振鈴現象。
     </p>
 
     <hr />
@@ -111,8 +149,10 @@
         <li>訊號輸入端 高頻濾波，抗 Radio frequency 干擾</li>
         <li>電源輸入端 使用低阻抗大電容，並增加 Snubber Circuit</li>
         <li>電源輸入端 濾波電路 RRS 濾除雜訊與漣波</li>
+        <li>高品質 X7R MLCC (samsung)(murata)</li>
+        <li>高品質 貼片電阻</li>
     </ul>
-    <p>( RRS 最小工作時輸入輸出壓差只有 1.7 V. 量測筆電變壓器輸出為 19.3V, 經過 RRS 後為17.6V, 符合 IC 的 max Vcc Supply Range: 18V. ) </p>
+    <p>(RRS 最小工作時輸入輸出壓差只有 1.7 V. 量測筆電變壓器輸出為 19.3V, 經過 RRS 後為17.6V, 符合 IC 的 max Vcc Supply Range: 18V.) </p>
 
     <p><img alt="dual_bridge_amp_smd" src="./images/dual_bridge_amp_smd.jpg"></p>
 
@@ -163,19 +203,11 @@
     <p><img alt="pcb-back_2d" src="./images/pcb-back_2d.png"></p>
     <p>pcb-back 3d:</p>
     <p><img alt="pcb-back_3d" src="./images/pcb-back_3d.png"></p>
-    <hr />
-    <p>Inline Code : <code>alert('Hello World');</code> just it</p>
-    <code>Code 0101010101010101</code>
-    <p><code>p Code 0101010101010101</code></p>
-    <pre><code>pre Code 0101010101010101pre Code 0101010101010101
-    pre Code 0101010101010101pre Code 0101010101010101pre Code 0101010101010101
-    pre Code 0101010101010101pre Code 0101010101010101pre Code 0101010101010101
-    </code></pre>
-    <p>p 0101010101010101</p>
-    <pre>pre 0101010101010101</pre>
+
     <hr />
     <blockquote cite="https://www.vitsoe.com/us/about/good-design">"Good design is as little design as possible."<br>
         ~ Dieter Rams</blockquote>
+    </article>
     <footer>
         <p>(c) 2023 Denzuko Brain-Computer Interfaces Laboratory. All Rights Reserved.
     </footer>
