@@ -16,8 +16,8 @@ body {
 header {
     background: transparent;
     text-align: center;
-    padding-top: 2.1rem;
-    padding-bottom: 1.4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 header a {
@@ -25,7 +25,7 @@ header a {
     letter-spacing: 0;
     color: #ccddff;
     text-align: center;
-    font-weight: normal;
+    font-weight: bolder;
     text-decoration: none;
 }
 
@@ -40,7 +40,7 @@ header a:hover {
 nav {
     background: #363636;
     border-radius: 1rem;
-    margin: 1rem;
+    margin-top: 0rem;
     margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -49,6 +49,7 @@ nav a {
     display: inline-block;
     color: #ca5;
     text-decoration: none;
+    padding: 0.3rem;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
     margin: 0.1rem;
@@ -71,9 +72,10 @@ nav a:hover {
 
 article {
     background: #181825;
-    padding: 1.5rem;
+    padding: 0.8rem;
     border-radius: 1rem;
     margin: 1.5rem;
+    margin-top: 1rem;
 }
 
 hr {
@@ -199,12 +201,12 @@ footer {
     font-size: 0.9rem;
     text-align: center;
     background: transparent;
-    padding: 1rem;
-    border: 0px solid #ff0000;
-    outline: 0px solid #00ff00;
+    padding-bottom: 0.5rem;
+    border: 0 solid #ff0000;
+    outline: 0 solid #00ff00;
     border-radius: 1rem;
     box-shadow: 0 0 0 0px #3333ff;
-    margin: 0px;
+    margin: 0;
 }
 
 footer p>a.beta {
