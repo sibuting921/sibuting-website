@@ -21,193 +21,196 @@
         <a href="../../about.html" title="Go to About page">🌞About</a>
     </nav>
     <article>
-    <h2>STA540 Dual Bridge Audio Power Amp</h2>
-    <aside>A high quality power amplifier with small size.</aside>
-    <h3>Description</h3>
-    <p>
-        這是一款小巧，方便使用，功率足夠應付多種環境，單電源供電，失真低，噪音小，IC周邊電路精簡的功率放大器。放大電路最優化，電源加上達靈頓濾波電路。
-    </p>
+        <h2>STA540 Dual Bridge Audio Power Amp</h2>
+        <p>A high quality power amplifier with small size.</p>
+        <h3>Description</h3>
+        <p>
+            這是一款小巧，方便使用，功率足夠應付多種環境，單電源供電，失真低，噪音小，IC周邊電路精簡的功率放大器。放大電路最優化，電源加上達靈頓濾波電路。
+        </p>
 
-    <h4>Features</h4>
-    <ol>
-        <li>體積小</li>
-        <li>發熱量小</li>
-        <li>待機耗電量小</li>
-        <li>失真低</li>
-        <li>雜訊小</li>
-    </ol>
-    <h4>Pictures</h4>
-    <p><img alt="dual_bridge_amp.image" src="./images/dual_bridge_amp.jpg"></p>
-    <p><img alt="dual_bridge_amp_run1" src="./images/dual_bridge_amp_run1.jpg"></p>
+        <h4>Features</h4>
+        <ol>
+            <li>體積小</li>
+            <li>發熱量小</li>
+            <li>待機耗電量小</li>
+            <li>失真低</li>
+            <li>雜訊小</li>
+        </ol>
+        <h4>Pictures</h4>
+        <p><img alt="dual_bridge_amp.image" src="./images/dual_bridge_amp.jpg"></p>
+        <p><img alt="dual_bridge_amp_run1" src="./images/dual_bridge_amp_run1.jpg"></p>
 
-    <hr />
-    <h3>Parameter</h3>
-    <h4>Main IC</h4>
-    <table>
-    <caption>Audio Amplifier Chip Campare</caption>
-        <thead>
-            <tr>
-                <th></th>
-                <th>TDA7266</th>
-                <th>TDA7297</th>
-                <th>STA540</th>
-                <th>Comment</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>電壓放大倍數</th>
-                <td>20</td>
-                <td>40</td>
-                <td>15.9</td>
-                <td>Vi/Vo</td>
-            </tr>
-            <tr>
-                <th>電壓迴轉率</th>
-                <td>3.20</td>
-                <td>4.57</td>
-                <td>2.26</td>
-                <td>(V/us)</td>
-            </tr>
-            <tr>
-                <th>輸出瓦數</th>
-                <td>18</td>
-                <td>18</td>
-                <td>22.5</td>
-                <td>(Watt)</td>
-            </tr>
-            <tr>
-                <th>消耗電流</th>
-                <td>50</td>
-                <td>50</td>
-                <td>109</td>
-                <td>(mA)</td>
-            </tr>
-        </tbody>
-    </table>
-    <ul>
-        <li>電壓放大倍數：TDA7297 > TDA7266 > STA540 (實測 x40, x20, x15.9)</li>
-        <li>電壓迴轉率：TDA7297 > TDA7266 > STA540 (實測 4.57 V/us, 3.20 V/us, 2.26 V/us)</li>
-        <li>輸出瓦數：STA540 > TDA7297 = TDA7266 (官方數據 22.5 W, 18 W, 18 W)</li>
-        <li>消耗電流：STA540 > TDA7297 = TDA7266 (實測 109 mA, 50 mA, 50 mA)</li>
-    </ul>
-    <p>主放大晶片可選擇 ST 的 TDA7266 、 TDA7297、STA540，PCB 都可兼容。這系列為 AB 類的 IC 有著失真低，雜音低，輸出推力好的優點，且輸出為 BTL 橋接模式，輸出電壓振幅大.
-    </p>
-    <h4>Sounds</h4>
+        <hr />
+        <h3>Parameter</h3>
+        <h4>Main IC</h4>
         <table>
-    <caption>Quality of sound</caption>
-        <thead>
-            <tr>
-                <th></th>
-                <th>TDA7266</th>
-                <th>TDA7297</th>
-                <th>STA540</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>高音量感</th>
-                <td>++++</td>
-                <td>+++++</td>
-                <td>++</td>
-            </tr>
-            <tr>
-                <th>低音量感</th>
-                <td>++++</td>
-                <td>++++</td>
-                <td>+++++</td>
-            </tr>
-                        <tr>
-                <th>均衡性</th>
-                <td>+++++</td>
-                <td>++++</td>
-                <td>++++</td>
-            </tr>
-            <tr>
-        </tbody>
-    </table>
-    <ul>
-        <li>高音量感：TDA7297 > TDA7266 > STA540</li>
-        <li>低音量感：STA540 > TDA7266 > TDA7297</li>
-        <li>均衡性：TDA7266 > STA540 > TDA7297</li>
-    </ul>
-    <h4>Compare</h4>
-    <p>STA540 則為車用等級，它的輸出級為 Sziklai Pair BJT，值得嘗試看看。 TDA7297 的速度在這之中是最快的，高音表現比其他的好，不過波型有點振鈴現像，相比其它聽起來會比較尖銳。TDA7266
-        則介於 STA540 與 TDA7297。</p>
-    <p>這三顆大致上相差不會太遠，主體都一致，只差別在修飾，有地方加分則有其它地方減分。比如我在桌上型全音域喇叭 搭配 STA540 最有感染力;不過在立式三路分音大劇院喇叭卻是搭配 TDA7297 最動聽, TDA7266 迴轉率夠而且沒振鈴現象。
-    </p>
+            <caption>Audio Amplifier Chip Campare</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>電壓放大倍數</th>
+                    <th>電壓迴轉率</th>
+                    <th>輸出瓦數</th>
+                    <th>消耗電流</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>TDA7266</th>
+                    <td>20</td>
+                    <td>3.20</td>
+                    <td>18</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <th>TDA7297</th>
+                    <td>40</td>
+                    <td>4.57</td>
+                    <td>18</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <th>STA540</th>
+                    <td>15.9</td>
+                    <td>2.26</td>
+                    <td>22.5</td>
+                    <td>109</td>
+                </tr>
+                <tr>
+                    <th>Comment</th>
+                    <td>Vi/Vo</td>
+                    <td>(V/us)</td>
+                    <td>(Watt)</td>
+                    <td>(mA)</td>
+                </tr>
+            </tbody>
+        </table>
+        <ul>
+            <li>電壓放大倍數：TDA7297 > TDA7266 > STA540 (實測 x40, x20, x15.9)</li>
+            <li>電壓迴轉率：TDA7297 > TDA7266 > STA540 (實測 4.57 V/us, 3.20 V/us, 2.26 V/us)</li>
+            <li>輸出瓦數：STA540 > TDA7297 = TDA7266 (官方數據 22.5 W, 18 W, 18 W)</li>
+            <li>消耗電流：STA540 > TDA7297 = TDA7266 (實測 109 mA, 50 mA, 50 mA)</li>
+        </ul>
+        <p>主放大晶片可選擇 ST 的 TDA7266 、 TDA7297、STA540，PCB 都可兼容。這系列為 AB 類的 IC 有著失真低，雜音低，輸出推力好的優點，且輸出為 BTL 橋接模式，輸出電壓振幅大.
+        </p>
+        <h4>Sounds</h4>
+        <table>
+            <caption>Quality of sound</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>高音量感</th>
+                    <th>低音量感</th>
+                    <th>均衡性</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>TDA7266</th>
+                    <td>+++</td>
+                    <td>+++</td>
+                    <td>++++</td>
+                </tr>
+                <tr>
+                    <th>TDA7297</th>
+                    <td>++++</td>
+                    <td>+++</td>
+                    <td>+++</td>
+                </tr>
+                <tr>
+                    <th>STA540</th>
+                    <td>++</td>
+                    <td>++++</td>
+                    <td>++</td>
+                </tr>
+                <tr>
+            </tbody>
+        </table>
+        <ul>
+            <li>高音量感：TDA7297 > TDA7266 > STA540</li>
+            <li>低音量感：STA540 > TDA7266 > TDA7297</li>
+            <li>均衡性：TDA7266 > STA540 > TDA7297</li>
+        </ul>
+        <h4>Compare</h4>
+        <p>STA540 則為車用等級，它的輸出級為 Sziklai Pair BJT，值得嘗試看看。 TDA7297 的速度在這之中是最快的，高音表現比其他的好，不過波型有點振鈴現像，相比其它聽起來會比較尖銳。TDA7266
+            則介於 STA540 與 TDA7297。</p>
+        <p>這三顆大致上相差不會太遠，主體都一致，只差別在修飾，有地方加分則有其它地方減分。比如我在桌上型全音域喇叭 搭配 STA540 最有感染力;不過在立式三路分音大劇院喇叭卻是搭配 TDA7297 最動聽, TDA7266
+            迴轉率夠而且沒振鈴現象。
+        </p>
 
-    <hr />
-    <h3>Optimize</h3>
-    <ul>
-        <li>PCB 類比小訊號接地（AGND）和 電源接地 (PGND) 分離</li>
-        <li>PCB 頂層電源接地佈局、45° 拐角佈線</li>
-        <li>IC ST 這系列的 本身有輸出短路、過熱、高電感負載、ESD 保護</li>
-        <li>電晶體 充放電逆電流保護</li>
-        <li>喇叭輸出端 Snubber Circuit 消除 Ringing </li>
-        <li>訊號輸入端 使用大交連電容，極低截止頻率</li>
-        <li>訊號輸入端 ESD 靜電突波保護</li>
-        <li>訊號輸入端 高頻濾波，抗 Radio frequency 干擾</li>
-        <li>電源輸入端 使用低阻抗大電容，並增加 Snubber Circuit</li>
-        <li>電源輸入端 濾波電路 RRS 濾除雜訊與漣波</li>
-        <li>高品質 X7R MLCC (samsung)(murata)</li>
-        <li>高品質 貼片電阻</li>
-    </ul>
-    <p>(RRS 最小工作時輸入輸出壓差只有 1.7 V. 量測筆電變壓器輸出為 19.3V, 經過 RRS 後為17.6V, 符合 IC 的 max Vcc Supply Range: 18V.) </p>
+        <hr />
+        <h3>Optimize</h3>
+        <ul>
+            <li>PCB 類比小訊號接地（AGND）和 電源接地 (PGND) 分離</li>
+            <li>PCB 頂層電源接地佈局、45° 拐角佈線</li>
+            <li>IC ST 這系列的 本身有輸出短路、過熱、高電感負載、ESD 保護</li>
+            <li>電晶體 充放電逆電流保護</li>
+            <li>喇叭輸出端 Snubber Circuit 消除 Ringing </li>
+            <li>訊號輸入端 使用大交連電容，極低截止頻率</li>
+            <li>訊號輸入端 ESD 靜電突波保護</li>
+            <li>訊號輸入端 高頻濾波，抗 Radio frequency 干擾</li>
+            <li>電源輸入端 使用低阻抗大電容，並增加 Snubber Circuit</li>
+            <li>電源輸入端 濾波電路 RRS 濾除雜訊與漣波</li>
+            <li>高品質 X7R MLCC (samsung)(murata)</li>
+            <li>高品質 貼片電阻</li>
+        </ul>
+        <p>(RRS 最小工作時輸入輸出壓差只有 1.7 V. 量測筆電變壓器輸出為 19.3V, 經過 RRS 後為17.6V, 符合 IC 的 max Vcc Supply Range: 18V.) </p>
 
-    <p><img alt="dual_bridge_amp_smd" src="./images/dual_bridge_amp_smd.jpg"></p>
+        <p><img alt="dual_bridge_amp_smd" src="./images/dual_bridge_amp_smd.jpg"></p>
 
-    <hr />
-    <h3>Measurement</h3>
-    <ul>
-        <li>靜態輸出雜訊：無輸入訊號, 喇叭輸出接腳上示波器，雜訊低於 2mV</li>
-        <li>靜態接腳雜訊：STA540 的控制接腳 Pin6 SVR 與 Pin7 ST-BY 雜訊低於 1mV</li>
-        <li>動態電壓波動：以 3吋 4 Ohm 單體當負載, 播放低頻, 控制接腳 Pin6 SVR 與 Pin7 ST-BY 波動小於 2mV, IC 電源腳波動小於 20mV</li>
-    </ul>
-    <p>更多測量細節: <a href="https://lasyaudio.blogspot.com/p/dual-bridge-power-amp-sta540-tda7266.html"
-            title="more measurement detail" rel="nofollow"> Dual Bridge Power AMP - STA540 TDA7266 TDA7297 - Measurement
-            Detail</a></p>
-    <p><img alt="dual_bridge_amp_measure" src="./images/dual_bridge_amp_measure.jpg"></p>
+        <hr />
+        <h3>Measurement</h3>
+        <ul>
+            <li>靜態輸出雜訊：無輸入訊號, 喇叭輸出接腳上示波器，雜訊低於 2mV</li>
+            <li>靜態接腳雜訊：STA540 的控制接腳 Pin6 SVR 與 Pin7 ST-BY 雜訊低於 1mV</li>
+            <li>動態電壓波動：以 3吋 4 Ohm 單體當負載, 播放低頻, 控制接腳 Pin6 SVR 與 Pin7 ST-BY 波動小於 2mV, IC 電源腳波動小於 20mV</li>
+        </ul>
+        <p>更多測量細節: <a href="https://lasyaudio.blogspot.com/p/dual-bridge-power-amp-sta540-tda7266.html"
+                title="more measurement detail" rel="nofollow"> Dual Bridge Power AMP - STA540 TDA7266 TDA7297 -
+                Measurement
+                Detail</a></p>
+        <p><img alt="dual_bridge_amp_measure" src="./images/dual_bridge_amp_measure.jpg"></p>
 
-    <hr />
-    <h3>Setting</h3>
-    <p>電路板可以使用不同的 IC，當使用 TDA7266 or TDA7297時: J1 要連起來; 使用 STA540時: J1 不接</p>
-    <p><img alt="pcb_setting1" src="./images/pcb_setting1.jpg"></p>
-    <p>Standby Mode: 啟動的方法為 C1 將電容兩側短路，Standby Mode 時，靜態電流只有 3.2 mA</p>
-    <p><img alt="pcb_standby" src="./images/pcb_standby.jpg"></p>
+        <hr />
+        <h3>Setting</h3>
+        <p>電路板可以使用不同的 IC，當使用 TDA7266 or TDA7297時: J1 要連起來; 使用 STA540時: J1 不接</p>
+        <p><img alt="pcb_setting1" src="./images/pcb_setting1.jpg"></p>
+        <p>Standby Mode: 啟動的方法為 C1 將電容兩側短路，Standby Mode 時，靜態電流只有 3.2 mA</p>
+        <p><img alt="pcb_standby" src="./images/pcb_standby.jpg"></p>
 
-    <hr />
-    <h3>Notice</h3>
-    <p>ST STA540 TDA7266 TDA7297 IC 的背面散熱面為接地，而 ST TIP122 背面散熱面為電源正電，裝散熱片或裝機殼時要小心分開，不然電源會短路。至少一個要分開或加隔離片</p>
-    <p><img alt="tip122_vcc" src="./images/tip122_vcc.jpg"></p>
+        <hr />
+        <h3>Notice</h3>
+        <p>ST STA540 TDA7266 TDA7297 IC 的背面散熱面為接地，而 ST TIP122 背面散熱面為電源正電，裝散熱片或裝機殼時要小心分開，不然電源會短路。至少一個要分開或加隔離片</p>
+        <p><img alt="tip122_vcc" src="./images/tip122_vcc.jpg"></p>
 
-    <hr />
-    <h3>Schematic</h3>
-    <p>RRP:</p>
-    <p><img alt="regulator_sch" src="./images/regulator_sch.png"></p>
-    <p>input:</p>
-    <p><img alt="input_sch" src="./images/input_sch.png"></p>
-    <p>volume:</p>
-    <p><img alt="volume_sch" src="./images/volume_sch.png"></p>
-    <p>main-ic:</p>
-    <p><img alt="main-ic_sch" src="./images/main-ic_sch.png"></p>
-    <p>mian-ic-components:</p>
-    <p><img alt="mian-ic-components_sch" src="./images/mian-ic-components_sch.png"></p>
-    <p>mian-ic-components:</p>
-    <p><img alt="output_sch" src="./images/output_sch.png"></p>
+        <hr />
+        <h3>Schematic</h3>
+        <p>RRP:</p>
+        <p><img alt="regulator_sch" src="./images/regulator_sch.png"></p>
+        <p>input:</p>
+        <p><img alt="input_sch" src="./images/input_sch.png"></p>
+        <p>volume:</p>
+        <p><img alt="volume_sch" src="./images/volume_sch.png"></p>
+        <p>main-ic:</p>
+        <p><img alt="main-ic_sch" src="./images/main-ic_sch.png"></p>
+        <p>mian-ic-components:</p>
+        <p><img alt="mian-ic-components_sch" src="./images/mian-ic-components_sch.png"></p>
+        <p>mian-ic-components:</p>
+        <p><img alt="output_sch" src="./images/output_sch.png"></p>
 
-    <hr />
-    <h3>PCB</h3>
-    <p>pcb-front 2d:</p>
-    <p><img alt="pcb-front_2d" src="./images/pcb-front_2d.png"></p>
-    <p>pcb-back 2d:</p>
-    <p><img alt="pcb-back_2d" src="./images/pcb-back_2d.png"></p>
-    <p>pcb-back 3d:</p>
-    <p><img alt="pcb-back_3d" src="./images/pcb-back_3d.png"></p>
+        <hr />
+        <h3>PCB</h3>
+        <p>pcb-front 2d:</p>
+        <p><img alt="pcb-front_2d" src="./images/pcb-front_2d.png"></p>
+        <p>pcb-back 2d:</p>
+        <p><img alt="pcb-back_2d" src="./images/pcb-back_2d.png"></p>
+        <p>pcb-back 3d:</p>
+        <p><img alt="pcb-back_3d" src="./images/pcb-back_3d.png"></p>
 
-    <hr />
-    <blockquote cite="https://www.vitsoe.com/us/about/good-design">"Good design is as little design as possible."<br>
-        ~ Dieter Rams</blockquote>
+        <hr />
+        <blockquote cite="https://www.vitsoe.com/us/about/good-design">"Good design is as little design as
+            possible."<br>
+            ~ Dieter Rams</blockquote>
     </article>
     <footer>
         <p>(c) 2023 Denzuko Brain-Computer Interfaces Laboratory. All Rights Reserved.
