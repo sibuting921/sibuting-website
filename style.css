@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: Hack, Consolas, 'Courier New', Courier, monospace;
+    font-family: 'Roboto Mono', Consolas, 'Courier New', Courier, monospace;
     color: #ccddff;
     background: #1e1e2e;
     border-radius: 1rem;
@@ -76,6 +76,7 @@ article {
     border-radius: 1rem;
     margin: 1.5rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 hr {
@@ -190,10 +191,10 @@ blockquote {
 }
 
 time {
-    background: linear-gradient(0deg, #24273a, #363636);
+    background: linear-gradient(180deg, #363636, #444);
     padding: 1px;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     border-radius: 1rem;
 }
 
