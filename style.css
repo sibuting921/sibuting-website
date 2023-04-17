@@ -190,6 +190,34 @@ blockquote {
     margin-bottom: 1.7rem;
 }
 
+figure {
+    border: 3px solid #334;
+    border-radius: 12px;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    border-radius: 9px;
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    height: fit-content;
+    width: fit-content;
+    user-select: none;
+}
+
 time {
     background: linear-gradient(180deg, #363636, #444);
     padding: 1px;
