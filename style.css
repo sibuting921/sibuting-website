@@ -5,42 +5,46 @@ html {
 
 body {
     font-family: Courier, 'Courier New', monospace;
-    color: #ccddff;
+    color: #cdf;
     background: #1e1e2e;
     border-radius: 1rem;
     margin: auto;
     margin-bottom: 2rem;
-    max-width: 50rem;
+    max-width: fit-content;
 }
 
 header {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Times New Roman', Helvetica, Arial, sans-serif;
     background: transparent;
     text-align: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
 }
 
 header a {
-    font-size: 170%;
-    letter-spacing: 0;
-    color: #ccddff;
+    font-size: 180%;
+    letter-spacing: 0.18rem;
+    color: #cdf;
     text-align: center;
-    font-weight: bolder;
+    font-weight: 100;
     text-decoration: none;
+    padding: 1rem;
 }
 
 header a:hover {
-    text-shadow:
-        0 0 0.1rem #fff,
-        0 0 0.2rem #fff,
-        0 0 0.3rem #fff;
-    text-decoration: none;
+    outline: #FFF solid 1px;
+}
+
+header a:active {
+    color: unset;
+    outline: #cdf solid 1px;
 }
 
 nav {
     font-family: Helvetica, Arial, sans-serif;
     background: #363636;
+    background: transparent;
+    text-align: center;
     border-radius: 1rem;
     padding-left: 0.4rem;
     margin-top: 0rem;
@@ -60,10 +64,14 @@ nav a {
 }
 
 nav a:hover {
-    color: #fe0;
+    color: #fff;
     background: #666;
-    text-decoration: underline;
     border-radius: 1rem;
+    outline: solid #666;
+}
+
+nav a:active {
+    background: unset;
 }
 
 /* 
@@ -79,7 +87,7 @@ article {
     padding: 0.8rem;
     border-radius: 1rem;
     margin: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -100,28 +108,34 @@ h5 {
 h1,
 h2 {
     color: #cc66cc;
+    color: #eee;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 h3 {
     color: #0c0;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    color: #eee;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 h4 {
     color: #090;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    color: #eee;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 h5 {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    color: #eee;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 p {
     font-family: Helvetica, Arial, sans-serif;
-    line-height: 120%;
+    line-height: 1.5rem;
     margin-left: 1.5rem;
     margin-right: 1rem;
 }
@@ -139,6 +153,15 @@ ol li a:hover {
 p a:link,
 li a:link {
     color: #66f;
+}
+
+a:active,
+p a:active,
+li a:active
+a:active,
+ul li a:active,
+ol li a:active {
+    text-decoration: none;
 }
 
 table {
@@ -164,7 +187,7 @@ caption {
 
 ul,
 ol {
-    line-height: 120%;
+    line-height: 1.5rem;
     margin-left: 0;
 }
 
