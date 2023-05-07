@@ -265,11 +265,27 @@ figure img {
 }
 
 time {
+    font-family: Courier, 'Courier New', monospace;
     background: linear-gradient(180deg, #363636, #444);
     padding: 1px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
     border-radius: 1rem;
+}
+
+p.time,
+p.time time {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:lighter;
+    letter-spacing: initial;
+    color: #cdf;
+    display: inline;
+    background: transparent;
+    font-size: 0.5rem;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    margin-left: 0.2rem;
 }
 
 footer {
@@ -293,17 +309,18 @@ footer p:hover>a.beta {
     text-decoration: none;
 }
 
-.sm_img {
+img {
+    max-width:100%;
+    height:auto;
+    border-radius: 0.25rem;
+  }
+
+img.sm {
     max-width:30%;
     height:auto;
 }
 
-.sm_img:hover {
+img.sm:hover {
     max-width:100%;
     height:auto;
 }
-
-img {
-    max-width:100%;
-    height:auto;
-  }
