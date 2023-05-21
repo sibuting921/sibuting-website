@@ -23,32 +23,40 @@
     <article>
 
         <div class="center">
-            <h2>Hight Current Ripple Filter</h2>
-            Ripple filter for power amplifiers. <p class="time">updated on<time>2023 May</time></p>
-            
-            <hr>
+            <h2>High Current Ripple Filter</h2>
+            Ripple filter for power amplifiers. updated on<time class="low">2023 May</time>
+            <br><br><hr>
         </div>
 
-        <h3>Introduction</h3>
+        <h3>1. Introduction</h3>
         <p>
-            I used to use a small capacitor multiplier for my headphone amp and preamp,<br>
-            it worked so great that I decide to design a high current version by using darlington transistors.<br>
-            And it worked aslo good on TDA7297 15+15W dual bridge amplifier.<br>
-            Maybe it can also work with LM3886.
+            I used to use small capacitor multiplier circuits as mains filters for headphone amps and preamps,<br>
+            It worked great so I designed a high current version by using darlington transistors for my TDA7266<br>
+            15+15W dual bridge amplifier.<br>
+            And it also performs well. Maybe it can also be used with LM3886.<br>
         </p>
 
-        <h4>Features</h4>
+        <h4>1.1 Features</h4>
         <ol>
             <li>can output high current</li>
             <li>simple</li>
-            <li>Can work under high pressure (depending on components)</li>
-            <li>can work on negative voltage</li>
+            <li>can work under higher voltage (depending on components)</li>
+            <li>can work on negative voltage (by using PNP Transistor)</li>
             <li>can reduce power line ripple voltage and noise</li>
         </ol>
-        <h4>Pictures</h4>
-        <p><img class="sm" alt="dual_bridge_amp.image" src="./images/hc_ripple_filter_multisim.png"></p>
-        <p><img class="sm" alt="dual_bridge_amp_run1" src="./images/hc_ripple_filter.png"></p>
-
+        <h3>2. Circuit</h3>
+        <h4>2.1 Ripple filter for current under 500mA:</h4>
+        <a href="./images/ripple_filter_500ma.png"><img class="sm" alt="ripple_filter_500ma.image" src="./images/ripple_filter_500ma.png"></a>
+        <p></p>
+        <h4>2.2 Ripple filter for current under 10A:</h4>
+        <a href="./images/ripple_filter_10a.png"><img class="sm" alt="ripple_filter_10a.image" src="./images/ripple_filter_10a.png"></a>
+        <p></p>
+        <h4>2.3 Ripple filter for current under 25A:</h4>
+        <a href="./images/ripple_filter_25a.png"><img class="sm" alt="ripple_filter_25a.image" src="./images/ripple_filter_25a.png"></a>
+        <p></p>
+        <h4>2.4 Ripple filter for <a href="../mini_stereo_amp_22/mini_stereo_amp_22.html"  alt="TDA7266 Stereo Amplifier">TDA7266 Stereo Amplifier</a>:</h4>
+        <a href="./images/hc_ripple_filter.png"><img class="sm" alt="hc_ripple_filter" src="./images/hc_ripple_filter.png"></a>
+        <p></p>
         <br>
         <hr />
         <blockquote cite="https://www.vitsoe.com/us/about/good-design">"Good design is as little design as

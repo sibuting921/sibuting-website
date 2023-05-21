@@ -1,0 +1,118 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>ID</title>
+   </head>
+   <body>
+      <style>
+         body {
+         font-family: Arial, Helvetica, sans-serif;
+         background-color: #eee;
+         }
+         .angry-grid {
+         display: grid;
+         grid-template-rows: 1fr 1fr 1fr;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         gap: 0px;
+         width: 270px;
+         height: 180px;
+         background: linear-gradient(-135deg, rgb(255, 102, 102) 0%, rgb(97, 87, 255) 100%);
+         padding: 2px;
+         border: 3px solid #bbb;
+         border-radius: 16px;
+         margin: 16px;
+         }
+         #item-0 {
+         grid-row-start: 1;
+         grid-column-start: 1;
+         grid-row-end: 2;
+         grid-column-end: 2;
+         }
+         #item-1 {
+         grid-row-start: 1;
+         grid-column-start: 2;
+         grid-row-end: 2;
+         grid-column-end: 5;
+         }
+         #item-2 {
+         grid-row-start: 2;
+         grid-column-start: 2;
+         grid-row-end: 4;
+         grid-column-end: 3;
+         border-bottom: 3px solid red;
+         }
+         #item-2>a:hover {
+         outline: auto;
+         }
+         #item-3 {
+         grid-row-start: 2;
+         grid-column-start: 3;
+         grid-row-end: 4;
+         grid-column-end: 5;
+         padding-left: 5px;
+         border-bottom: 3px solid red;
+         margin-right: 0.5em;
+         }
+         #item-4 {
+         grid-row-start: 2;
+         grid-column-start: 1;
+         grid-row-end: 4;
+         grid-column-end: 2;
+         }
+         #item-1>#id-company-ch {
+         font-size: 0.83rem;
+         font-weight: bolder;
+         padding-bottom: 0rem;
+         margin: 0.5rem;
+         margin-top: 0.5rem;
+         margin-bottom: 0em;
+         }
+         #item-1>#id-company-en {
+         font-size: 0.5rem;
+         padding-top: 0rem;
+         margin: 0.5rem;
+         margin-top: 0rem;
+         margin-bottom: 0em;
+         }
+         #id-name-ch {
+         font-size: 120%;
+         margin: 1rem;
+         margin-bottom: 0.15rem;
+         margin-left: 1.2rem;
+         }
+         #id-name-en {
+         font-size: 75%;
+         padding-top: 0rem;
+         margin: 1rem;
+         margin-top: 0rem;
+         margin-bottom: 0rem;
+         margin-left: 1.2rem;
+         }
+      </style>
+      <div class="angry-grid">
+         <div id="item-0">
+            &nbsp;
+            <img width="56" height="56" src="./images/logoTsmc.svg">
+         </div>
+         <div id="item-1">
+            <p id="id-company-ch">qq</p>
+            <p id="id-company-en">qq,Ltd.</p>
+         </div>
+         <div id="item-2">
+            &nbsp;
+            <a href="https://xxxxx"><img width="64"
+               height="64" src="./images/photoId.png" alt="My
+               Photo"></a>
+         </div>
+         <div id="item-3">
+            <p id="id-name-ch">nnn</p>
+            <p id="id-name-en">xxx</p>
+            <br>
+            <p id="id-name-en">092x</p>
+         </div>
+         <div id="item-4">
+            &nbsp;
+         </div>
+      </div>
+   </body>
+</html>
